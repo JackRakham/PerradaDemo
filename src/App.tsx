@@ -57,13 +57,13 @@ const About = () => (
         <h2 className="text-3xl font-bold mb-6">Nuestra Historia</h2>
         <p className="text-gray-600 mb-6">
           En La Perrada de Rodris, nos enorgullece servir los hot dogs más
-          deliciosos de la ciudad desde hace más de 5 años. Cada perro caliente
+          deliciosos de la ciudad desde hace más de 5 años. Cada perro caliente, hamburguesa o empanada
           es preparado con dedicación y los mejores ingredientes.
         </p>
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">Nuestras Especialidades:</h3>
           <ul className="space-y-2">
-            {['Hot Dogs Tradicionales', 'Perros Especiales', 'Combos Familiares'].map((item, index) => (
+            {['Empanadas Tradicionales', 'Perros Especiales', 'Combos Familiares'].map((item, index) => (
               <li key={index} className="flex items-center">
                 <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
                 {item}
@@ -82,7 +82,7 @@ const Footer = () => (
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 className="text-xl font-bold mb-4">La Perrada de Rodris</h3>
-          <p>Los mejores hot dogs de la ciudad</p>
+          <p>Las mejores empanadas</p>
         </div>
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 className="text-xl font-bold mb-4">Horario</h3>
