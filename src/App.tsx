@@ -1,6 +1,8 @@
 
 // Estilos globales que necesitarás en tu index.css
 
+import CarouselCarta from "./components/carouselMenú";
+
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 bg-red-600 p-4 z-50">
@@ -105,6 +107,7 @@ const App = () => (
     <main>
       <Hero />
       <About />
+      <CarouselCarta></CarouselCarta>
     </main>
     <Footer />
   </div>
