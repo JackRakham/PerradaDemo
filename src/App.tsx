@@ -1,6 +1,7 @@
 
 // Estilos globales que necesitarás en tu index.css
 
+import CarouselChavo from "./components/carouselChavo";
 import CarouselCarta from "./components/carouselMenú";
 
 
@@ -108,6 +109,7 @@ const App = () => (
       <Hero />
       <About />
       <CarouselCarta></CarouselCarta>
+      <CarouselChavo></CarouselChavo>
     </main>
     <Footer />
   </div>
