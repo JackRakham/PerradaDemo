@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Estilos globales que necesitarás en tu index.css
 
