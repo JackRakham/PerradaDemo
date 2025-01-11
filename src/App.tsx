@@ -64,15 +64,7 @@ const About = () => (
           es preparado con dedicación y los mejores ingredientes.
         </p>
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Nuestras Especialidades:</h3>
-          <ul className="space-y-2">
-            {['Empanadas Tradicionales', 'Perros Especiales', 'Combos Familiares'].map((item, index) => (
-              <li key={index} className="flex items-center">
-                <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
-                {item}
-              </li>
-            ))}
-          </ul>
+
         </div>
       </div>
     </div>
