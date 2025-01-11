@@ -108,8 +108,11 @@ const App = () => (
     <main>
       <Hero />
       <About />
-      <CarouselCarta></CarouselCarta>
-      <CarouselChavo></CarouselChavo>
+      <div className="space-y-0"> {/* Contenedor con espaciado controlado */}
+        <CarouselCarta></CarouselCarta>
+        <CarouselChavo></CarouselChavo>
+      </div>
+
     </main>
     <Footer />
   </div>

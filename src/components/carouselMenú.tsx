@@ -22,28 +22,28 @@ class CarouselCarta extends Component {
                             >
                                 <div className="h-96">
                                     <img
-                                        src="assets/hamburguesa.jpeg"
+                                        src="hamburguesa.jpeg"
                                         alt="Hamburguesa"
                                         className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="h-96">
                                     <img
-                                        src="assets/limonada.jpeg"
+                                        src="limonada.jpeg"
                                         alt="Limonada"
                                         className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="h-96">
                                     <img
-                                        src="assets/salchipapa.jpeg"
+                                        src="salchipapa.jpeg"
                                         alt="Salchipapa"
                                         className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="h-96">
                                     <img
-                                        src="assets/perro.jpeg"
+                                        src="perro.jpeg"
                                         alt="Perro Caliente"
                                         className="h-full object-cover"
                                     />

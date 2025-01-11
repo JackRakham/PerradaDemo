@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class CarouselChavo extends Component {
     render() {
         return (
-            <section className="w-full py-16 bg-gray-50">
+            <section className="w-full py-16 pt-3 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-4xl font-bold text-center mb-12">Conoce la vecindad del chavo del 8!</h2>
                     <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -22,14 +22,14 @@ class CarouselChavo extends Component {
                             >
                                 <div className="h-96">
                                     <img
-                                        src="assets/vecindad1.jpeg"
+                                        src="vecindad1.jpeg"
                                         alt="Vecindad1"
                                         className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="h-96">
                                     <img
-                                        src="assets/vecindad2.jpeg"
+                                        src="vecindad2.jpeg"
                                         alt="Vecindad2"
                                         className="h-full object-cover"
                                     />
@@ -40,7 +40,14 @@ class CarouselChavo extends Component {
 
                         {/* Columna del texto */}
                         <div className="w-full md:w-1/2 space-y-6">
-
+                            <div>
+                                <h3 className="text-3xl font-bold mb-4">Revive tu infancia</h3>
+                                <p className="text-gray-600">
+                                    En esta esquina del restaurante, te transportamos a la vecindad más famosa de la televisión.
+                                    Disfruta de tus platillos favoritos rodeado del encanto de El Chavo del 8.
+                                    ¡Ideal para fotos inolvidables y momentos llenos de nostalgia! 📸✨
+                                </p>
+                            </div>
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">Comida rapida</h3>
                                 <ul className="space-y-2">
@@ -67,14 +74,7 @@ class CarouselChavo extends Component {
                                 </ul>
                             </div>
 
-                            <div>
-                                <h3 className="text-xl font-bold mb-3">Revive tu infancia</h3>
-                                <p className="text-gray-600">
-                                    En esta esquina del restaurante, te transportamos a la vecindad más famosa de la televisión.
-                                    Disfruta de tus platillos favoritos rodeado del encanto de El Chavo del 8.
-                                    ¡Ideal para fotos inolvidables y momentos llenos de nostalgia! 📸✨
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
