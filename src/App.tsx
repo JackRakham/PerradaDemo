@@ -47,7 +47,7 @@ const Hero = () => (
 );
 
 const About = () => (
-  <section id="nosotros" className="w-full py-16">
+  <section id="nosotros" className="w-full py-16 pb-0 sd:pb-16">
     <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center">
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <img
