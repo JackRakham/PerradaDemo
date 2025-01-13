@@ -6,7 +6,7 @@ import CarouselCarta from "./components/carouselMenú";
 
 
 const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 bg-red-600 p-4 z-50">
+  <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg p-4 z-50">
     <div className="max-w-7xl mx-auto flex justify-between items-center">
       <div className="text-white text-xl font-bold">La Perrada de Rodris</div>
       <div className="hidden md:flex space-x-6">
@@ -72,7 +72,7 @@ const About = () => (
 );
 
 const Footer = () => (
-  <footer className="w-full bg-gray-900 text-white py-8">
+  <footer className="w-full bg-gray-900 text-white py-8" id="contacto">
     <div className="max-w-7xl mx-auto px-4">
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
