@@ -77,7 +77,7 @@ const About = () => (
     <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center">
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <img
-          src="https://live.staticflickr.com/8050/8125965665_b621fcafeb_b.jpg"
+          src="fachada1.jpg"
           alt="Nuestro local"
           className="rounded-lg shadow-xl w-full"
         />
