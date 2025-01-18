@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class CarouselCarta extends Component {
     render() {
         return (
-            <section className="w-full py-16 pb-4 sm:pb-16 bg-gray-50" id="menu">
+            <section className="w-full py-16 pb-4 pt-4 sm:pb-16 bg-gray-50" id="menu">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-4xl font-bold text-center mb-12">Nuestras Especialidades</h2>
                     <div className="flex flex-col md:flex-row gap-8 items-center">

@@ -1,7 +1,7 @@
 
 import CarouselChavo from "./components/carouselChavo";
 import CarouselCarta from "./components/carouselMenú";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import MenuPerrada from "./components/menu";
 
 
@@ -46,7 +46,6 @@ const Navbar = () => {
   );
 }
 const Hero = () => (
-
   <div className="relative w-full h-screen">
     <div className="absolute inset-0 bg-black opacity-50"></div>
     <div className="absolute inset-0">
@@ -74,7 +73,7 @@ const Hero = () => (
 );
 
 const About = () => (
-  <section id="nosotros" className="w-full py-16 pb-4 sm:pb-16">
+  <section id="nosotros" className="w-full py-16 pb-4 sm:pb-8">
     <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center">
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <img
@@ -107,13 +106,13 @@ const Footer = () => (
         </div>
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 className="text-xl font-bold mb-4">Horario</h3>
-          <p>Lunes a Sábado: 12:00 PM - 10:00 PM</p>
-          <p>Domingo: 2:00 PM - 9:00 PM</p>
+          <p>Lunes a Sábado: 5:00 PM - 3:00 AM</p>
+          <p>Domingo: 3:00 PM - 1:00 AM</p>
         </div>
         <div className="w-full md:w-1/3">
           <h3 className="text-xl font-bold mb-4">Contacto</h3>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Email: info@perradarodris.com</p>
+          <p>Teléfono: (+57) 311 2649655</p>
+          <p>Email: LaPerradaRodris@hotmail.com</p>
         </div>
       </div>
     </div>
