@@ -42,14 +42,28 @@ class CarouselChavo extends Component {
                             >
                                 <div className="h-96">
                                     <img
-                                        src="vecindad1.jpeg"
+                                        src="fotochavo1.jpg"
                                         alt="Vecindad1"
                                         className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="h-96">
                                     <img
-                                        src="vecindad2.jpeg"
+                                        src="fotochavo2.jpg"
+                                        alt="Vecindad2"
+                                        className="h-full object-cover"
+                                    />
+                                </div>
+                                <div className="h-96">
+                                    <img
+                                        src="fotochavo3.jpg"
+                                        alt="Vecindad2"
+                                        className="h-full object-cover"
+                                    />
+                                </div>
+                                <div className="h-96">
+                                    <img
+                                        src="fotochavo4.jpg"
                                         alt="Vecindad2"
                                         className="h-full object-cover"
                                     />
