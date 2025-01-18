@@ -82,13 +82,7 @@ const menuData: MenuCategory[] = [
 const MenuPerrada = () => {
     const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
 
-    const formatPrice = (price: number) => {
-        return new Intl.NumberFormat('es-CO', {
-            style: 'currency',
-            currency: 'COP',
-            minimumFractionDigits: 0
-        }).format(price);
-    };
+
 
     return (
         <div className="relative min-h-[300px] w-full overflow-hidden bg-gradient-to-br from-green-500 via-orange-400 to-green-500">
