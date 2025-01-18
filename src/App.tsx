@@ -1,25 +1,52 @@
 
-// Estilos globales que necesitarás en tu index.css
-
 import CarouselChavo from "./components/carouselChavo";
 import CarouselCarta from "./components/carouselMenú";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import MenuPerrada from "./components/menu";
 
 
-const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg p-4 z-50">
-    <div className="max-w-7xl mx-auto flex justify-between items-center">
-      <div className="text-white text-xl font-bold">La Perrada de Rodris</div>
-      <div className="hidden md:flex space-x-6">
-        <a href="#" className="text-white">Inicio</a>
-        <a href="#menu" className="text-white">Menú</a>
-        <a href="#nosotros" className="text-white">Nosotros</a>
-        <a href="#contacto" className="text-white">Contacto</a>
+const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string, sectionId: string) => {
+    navigate(path); // Navega a la página correspondiente
+    if (sectionId) {
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" }); // Desplázate suavemente a la sección
+        }
+      }, 100); // Espera un breve momento para asegurarte de que la página cargue
+    }
+  };
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg p-4 z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="text-white text-xl font-bold">La Perrada de Rodris</div>
+        <div className="hidden md:flex space-x-6">
+          <button onClick={() => handleNavigation("/", "")} className="text-white">
+            Inicio
+          </button>
+          <button onClick={() => handleNavigation("/menu", "")} className="text-white">
+            Menú
+          </button>
+          <button onClick={() => handleNavigation("/", "chavo")} className="text-white">
+            Chavo
+          </button>
+          <button onClick={() => handleNavigation("/", "nosotros")} className="text-white">
+            Nosotros
+          </button>
+          <button onClick={() => handleNavigation("/", "contacto")} className="text-white">
+            Contacto
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
-);
-
+    </nav>
+  );
+}
 const Hero = () => (
+
   <div className="relative w-full h-screen">
     <div className="absolute inset-0 bg-black opacity-50"></div>
     <div className="absolute inset-0">
@@ -64,7 +91,6 @@ const About = () => (
           es preparado con dedicación y los mejores ingredientes. Somos la mejor opción para esos antojos nocturnos que no se pueden evitar.
         </p>
         <div className="space-y-4">
-
         </div>
       </div>
     </div>
@@ -94,18 +120,26 @@ const Footer = () => (
   </footer>
 );
 
-const App = () => (
-  <div className="relative w-full overflow-hidden">
-    <Navbar />
-    <main>
+const Landing = () => (
+  <main>
+    <div className="relative z-10">
       <Hero />
       <About />
-      <div className="space-y-0"> {/* Contenedor con espaciado controlado */}
+      <div className="space-y-0">
         <CarouselCarta></CarouselCarta>
         <CarouselChavo></CarouselChavo>
       </div>
+    </div>
+  </main>
+)
 
-    </main>
+const App = () => (
+  <div className="relative w-full overflow-hidden">
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/menu" element={<MenuPerrada />} />
+    </Routes>
     <Footer />
   </div>
 );
