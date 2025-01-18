@@ -85,7 +85,7 @@ const MenuPerrada = () => {
 
 
     return (
-        <div className="relative min-h-[300px] w-full overflow-hidden bg-gradient-to-br from-green-500 via-orange-400 to-green-500">
+        <div id="menú" className="relative min-h-[300px] w-full overflow-hidden bg-gradient-to-br from-green-500 via-orange-400 to-green-500">
             <div
                 className="absolute inset-0 animate-slide-right"
                 style={{

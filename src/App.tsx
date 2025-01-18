@@ -28,11 +28,11 @@ const Navbar = () => {
           <button onClick={() => handleNavigation("/", "")} className="text-white">
             Inicio
           </button>
-          <button onClick={() => handleNavigation("/menu", "")} className="text-white">
+          <button onClick={() => handleNavigation("/menu", "menú")} className="text-white">
             Menú
           </button>
           <button onClick={() => handleNavigation("/", "chavo")} className="text-white">
-            Chavo
+            El Chavo
           </button>
           <button onClick={() => handleNavigation("/", "nosotros")} className="text-white">
             Nosotros
