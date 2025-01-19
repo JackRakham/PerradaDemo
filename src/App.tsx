@@ -9,21 +9,21 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleNavigation = (path: string, sectionId: string) => {
-    navigate(path); // Navega a la página correspondiente
+    navigate(path);
     if (sectionId) {
       setTimeout(() => {
         const section = document.getElementById(sectionId);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth" }); // Desplázate suavemente a la sección
+          section.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100); // Espera un breve momento para asegurarte de que la página cargue
+      }, 100);
     }
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg p-4 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold">La Perrada de Rodris</div>
+        <div className="text-white text-xl font-bold font-chavo">La Perrada de Rodris</div>
         <div className="hidden md:flex space-x-6">
           <button onClick={() => handleNavigation("/", "")} className="text-white">
             Inicio
@@ -86,7 +86,7 @@ const About = () => (
         <h2 className="text-3xl font-bold mb-6">Nuestra Historia</h2>
         <p className="text-gray-600 mb-6">
           En La Perrada de Rodris, nos enorgullece servir la comida rapida
-          mas deliciosa del pueblo desde hace más de 5 años. Cada perro caliente, hamburguesa, salchipapa o empanada
+          mas deliciosa del pueblo desde hace más de 20 años. Cada perro caliente, hamburguesa, salchipapa o empanada
           es preparado con dedicación y los mejores ingredientes. Somos la mejor opción para esos antojos nocturnos que no se pueden evitar.
         </p>
         <div className="space-y-4">
@@ -125,8 +125,8 @@ const Landing = () => (
       <Hero />
       <About />
       <div className="space-y-0">
-        <CarouselCarta></CarouselCarta>
         <CarouselChavo></CarouselChavo>
+        <CarouselCarta></CarouselCarta>
       </div>
     </div>
   </main>
