@@ -86,7 +86,7 @@ const About = () => (
         <h2 className="text-3xl font-bold mb-6">Nuestra Historia</h2>
         <p className="text-gray-600 mb-6">
           En La Perrada de Rodris, nos enorgullece servir la comida rapida
-          mas deliciosa del pueblo desde hace más de 5 años. Cada perro caliente, hamburguesa, salchipapa o empanada
+          mas deliciosa del pueblo desde hace más de 20 años. Cada perro caliente, hamburguesa, salchipapa o empanada
           es preparado con dedicación y los mejores ingredientes. Somos la mejor opción para esos antojos nocturnos que no se pueden evitar.
         </p>
         <div className="space-y-4">

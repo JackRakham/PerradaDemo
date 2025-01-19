@@ -11,13 +11,13 @@ class CarouselChavo extends Component {
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                         <div className="w-full md:w-1/2 space-y-6">
                             <div>
-                                <h3 className="text-3xl font-bold mb-4">Revive tu infancia</h3>
+                                <h3 className="text-3xl font-bold mb-4 font-chavo">Revive tu infancia</h3>
                                 <p className="text-white-600">
                                     En esta esquina del restaurante, te transportamos a la vecindad más famosa de la televisión.
                                     Disfruta de tus platillos favoritos rodeado del encanto de El Chavo del 8.
                                     ¡Ideal para fotos inolvidables y momentos llenos de nostalgia! 📸✨
                                 </p><br></br>
-                                <h3 className="text-3xl pt-2 font-bold mb-4">Un rincón lleno de magia y sonrisas 🌟</h3>
+                                <h3 className="text-3xl pt-2 font-bold mb-4 font-chavo">Un rincón lleno de magia y sonrisas 🌟</h3>
                                 <p className="text-white-1800">
                                     Cada detalle de este espacio ha sido creado para que sientas la calidez y alegría de la vecindad más querida.
                                     Desde el emblemático barril hasta los colores vibrantes, aquí no solo comes, ¡también vives una experiencia única!
