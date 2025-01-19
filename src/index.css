@@ -38,3 +38,26 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #911818;  /* Fondo rojo más intenso */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bebebe;  /* Color más claro para el thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bebebe;  /* Un tono aún más claro al hacer hover */
+}
+
+/* Estilos para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bebebe #971919;  /* thumb color, track color */
+}
