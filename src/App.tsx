@@ -23,7 +23,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg p-4 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold font-chavo">La Perrada de Rodris</div>
+
+        <div className="flex items-center gap-2">
+      <img 
+        src="logoperrada.jpeg" 
+        alt="Logo Perrada" 
+        className="h-10 w-10 object-cover rounded-full"
+      />
+      <div className="text-white text-xl font-bold font-chavo">La Perrada de Rodris</div>
+    </div>
         <div className="hidden md:flex space-x-6">
           <button onClick={() => handleNavigation("/", "")} className="text-white">
             Inicio
@@ -101,16 +109,16 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4">
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
-          <h3 className="text-xl font-bold mb-4">La Perrada de Rodris</h3>
+          <h3 className="text-xl font-bold mb-4 font-chavo">La Perrada de Rodris</h3>
           <p>Las mejores empanadas</p>
         </div>
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
-          <h3 className="text-xl font-bold mb-4">Horario</h3>
+          <h3 className="text-xl font-bold mb-4 font-chavo">Horario</h3>
           <p>Lunes a Sábado: 5:00 PM - 3:00 AM</p>
           <p>Domingo: 3:00 PM - 1:00 AM</p>
         </div>
         <div className="w-full md:w-1/3">
-          <h3 className="text-xl font-bold mb-4">Contacto</h3>
+          <h3 className="text-xl font-bold mb-4 font-chavo">Contacto</h3>
           <p>Teléfono: (+57) 311 2649655</p>
           <p>Email: LaPerradaRodris@hotmail.com</p>
         </div>
@@ -119,14 +127,36 @@ const Footer = () => (
   </footer>
 );
 
+const SectionDivider = () => (
+  <div className="w-full">
+    <div className="h-3 bg-gradient-to-r from-yellow-600 via-yellow-500 to-green-500 w-full"></div>
+  </div>
+);
+
+const GreenSectionDivider = () => (
+  <div className="w-full">
+    <div className="h-3 bg-green-500 w-full"></div>
+  </div>
+);
+
+const MustardSectionDivider = () => (
+  <div className="w-full">
+    <div className="h-3 bg-yellow-500 w-full"></div>
+  </div>
+);
+
 const Landing = () => (
   <main>
     <div className="relative z-10">
       <Hero />
+      <SectionDivider/>
       <About />
+      <MustardSectionDivider/>
       <div className="space-y-0">
         <CarouselChavo></CarouselChavo>
+        <MustardSectionDivider/>
         <CarouselCarta></CarouselCarta>
+        <GreenSectionDivider/>
       </div>
     </div>
   </main>
