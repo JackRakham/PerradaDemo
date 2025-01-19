@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        chavo: ['Sour Gummy', 'cursive'],
+        sans: []
+      },
       animation: {
         'slide': 'slide 20s linear infinite',
         'slide-reverse': 'slide-reverse 15s linear infinite',
@@ -23,6 +27,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@designbycode/tailwindcss-text-stroke")],
 }
 
