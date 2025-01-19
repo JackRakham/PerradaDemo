@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class CarouselChavo extends Component {
     render() {
         return (
-            <section id="chavo" className="w-full py-16 pt-4 pb-4 sm:pb-16 bg-[url('paredladrillo.jpg')] bg-cover bg-center">
+            <section id="chavo" className="w-full py-16 pt-4 pb-4 sm:pb-16 bg-[url('https://res.cloudinary.com/dw1fnhttx/image/upload/v1737253341/paredladrillo_yugi3o.jpg')] bg-cover bg-center">
                 <div className="max-w-7xl mx-auto px-4 text-white">
                     <h2 className="text-5xl font-bold text-center mb-12 text-white font-chavo">Conoce la vecindad del chavo del 8!</h2>
                     <div className="flex flex-col md:flex-row gap-8 items-center">
