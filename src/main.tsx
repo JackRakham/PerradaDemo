@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <a href="https://wa.me/573203636504" target="_blank" rel="noreferrer noopener"
+      <a href="https://wa.me/573112649655" target="_blank" rel="noreferrer noopener"
         className="opacity-90 fixed bottom-4 right-6 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25d366]">
         <div
           className="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] hover:bg-[#25d350] transition-colors">
